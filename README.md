@@ -60,7 +60,6 @@ This project mainly contains the following parts.
 │   ├── data_preprocess.ipynb                        # Jupyter notebook for data preprocessing
 │   ├── classification.ipynb                         # Jupyter notebook for building node classification models
 │   ├── regression.ipynb                             # Jupyter notebook for building node regression models
-│   ├── visualization.ipynb                          # Jupyter notebook for graph visualization and analysis
 │   │
 │   ├── qualitative_graph/                           # Qualitative graph construction
 │   │   ├── model.pkl                                # Trained qualitative classification model (74 nodes)
