@@ -8,10 +8,6 @@ The paper has been submitted and is currently under peer review.
 
 🔑 **Keywords**: endocrine disruption, knowledge graph, deep learning, causality, toxicity prediction
 
-⚠️ **Note**: This repository only provides the **essential code** and **modeling data** used in the manuscript.  
-For the **complete model**, including the **endocrine disruption knowledge graph**, **toxicology datasets**, and an **interactive prediction platform**, please visit our official website: 👉 [https://www.edkgdl.com/#/](https://www.edkgdl.com/#/).
-
-
 # 💖 Brief introduction
 We propose an **E**ndocrine **D**isruption Deep Learning framework with causality-integrated **K**nowledge **G**raph (**EDKG-DL**), designed to enable efficient, interpretable, and sustainable screening of endocrine-disrupting chemicals (EDCs).  
 This repository provides the **core code and modeling data** used in our unpublished manuscript (currently under peer review). For the **complete model**, including the endocrine disruption knowledge graph, toxicology datasets, and interactive prediction platform, please visit 👉 [https://www.edkgdl.com/#/](https://www.edkgdl.com/#/).
