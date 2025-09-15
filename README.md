@@ -61,11 +61,11 @@ This project mainly contains the following parts.
 │   ├── edkgdl_element_classifier.ipynb              # Jupyter notebook for building node classification models
 │   ├── edkgdl_element_classifier.ipynb              # Jupyter notebook for building node regression models
 │   │
-│   ├── qualitative_graph/                           # Qualitative graph construction
+│   ├── qualitative_models/                           # Qualitative graph construction
 │   │   ├── model.pkl                                # Trained qualitative classification model (74 nodes)
 │   │   └── data.csv                                 # Modeling data for qualitative graph construction
 │   │
-│   └── quantitative_graph/                          # Quantitative graph construction
+│   └── quantitative_models/                          # Quantitative graph construction
 │       ├── model.pkl                                # Trained quantitative regression model (52 nodes)
 │       └── data.csv                                 # Modeling data for quantitative graph construction
 │
