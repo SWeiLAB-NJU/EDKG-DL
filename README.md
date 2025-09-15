@@ -57,9 +57,9 @@ This project mainly contains the following parts.
 
 ```
 ├── Graph-informed data preparation                  # Data, models, and notebooks for constructing qualitative and quantitative graphs
-│   ├── edkgdl_data_pipeline.ipynb                        # Jupyter notebook for data preprocessing
-│   ├── edkgdl_element_classifier.ipynb                         # Jupyter notebook for building node classification models
-│   ├── edkgdl_element_classifier.ipynb                             # Jupyter notebook for building node regression models
+│   ├── edkgdl_data_pipeline.ipynb                   # Jupyter notebook for data preprocessing
+│   ├── edkgdl_element_classifier.ipynb              # Jupyter notebook for building node classification models
+│   ├── edkgdl_element_classifier.ipynb              # Jupyter notebook for building node regression models
 │   │
 │   ├── qualitative_graph/                           # Qualitative graph construction
 │   │   ├── model.pkl                                # Trained qualitative classification model (74 nodes)
