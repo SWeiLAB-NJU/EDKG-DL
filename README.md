@@ -9,7 +9,7 @@ The paper has been submitted and is currently under peer review.
 🔑 **Keywords**: endocrine disruption, knowledge graph, deep learning, causality, toxicity prediction
 
 # 💖 Brief introduction
-We propose an **E**ndocrine **D**isruption Deep Learning framework with causality-integrated **K**nowledge **G**raph (**EDKG-DL**), designed to enable efficient, interpretable, and sustainable screening of endocrine-disrupting chemicals (EDCs).  
+We propose an **D**eep **L**earning framework with causality-integrated **E**ndocrine **D**isruption **K**nowledge **G**raph (**EDKG-DL**), designed to enable efficient, interpretable, and sustainable screening of endocrine-disrupting chemicals (EDCs).  
 This repository provides the **core code and modeling data** used in our unpublished manuscript (currently under peer review). For the **complete model**, including the endocrine disruption knowledge graph, toxicology datasets, and interactive prediction platform, please visit 👉 [https://www.edkgdl.com/#/](https://www.edkgdl.com/#/).
 
 <div align="center">
@@ -57,9 +57,9 @@ This project mainly contains the following parts.
 
 ```
 ├── Graph-informed data preparation                  # Data, models, and notebooks for constructing qualitative and quantitative graphs
-│   ├── data_preprocess.ipynb                        # Jupyter notebook for data preprocessing
-│   ├── classification.ipynb                         # Jupyter notebook for building node classification models
-│   ├── regression.ipynb                             # Jupyter notebook for building node regression models
+│   ├── edkgdl_data_pipeline.ipynb                        # Jupyter notebook for data preprocessing
+│   ├── edkgdl_element_classifier.ipynb                         # Jupyter notebook for building node classification models
+│   ├── edkgdl_element_classifier.ipynb                             # Jupyter notebook for building node regression models
 │   │
 │   ├── qualitative_graph/                           # Qualitative graph construction
 │   │   ├── model.pkl                                # Trained qualitative classification model (74 nodes)
