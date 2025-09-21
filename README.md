@@ -56,18 +56,38 @@ xgboost         3.0.2
 This project mainly contains the following parts.
 
 ```
-├── Graph-informed data preparation                  # Data, models, and notebooks for constructing qualitative and quantitative graphs
-│   ├── edkgdl_data_pipeline.ipynb                   # Jupyter notebook for data preprocessing
-│   ├── edkgdl_element_classifier.ipynb              # Jupyter notebook for building node classification models
-│   ├── edkgdl_element_classifier.ipynb              # Jupyter notebook for building node regression models
+├── Graph-informed data preparation                  # Data and demos for element-specific classification & regression
+│   ├── qualitative_data_for_modeling/               # Datasets for training element-specific classifiers
+│   │   └── event_X/                                 # Each folder = one biological event
+│   │       ├── Xtrain.csv                           # Training features
+│   │       ├── Ytrain.csv                           # Training labels
+│   │       ├── Xtest.csv                            # Test features
+│   │       └── Ytest.csv                            # Test labels
 │   │
-│   ├── qualitative_models/                           # Qualitative graph construction
-│   │   ├── model.pkl                                # Trained qualitative classification model (74 nodes)
-│   │   └── data.csv                                 # Modeling data for qualitative graph construction
+│   ├── quantitative_data_for_modeling/              # Datasets for training element-specific regressors
+│   │   └── event_Y/                                 # Each folder = one biological event
+│   │       ├── xtrain.csv                           # Training features
+│   │       ├── ytrain.csv                           # Training targets
+│   │       ├── xtest.csv                            # Test features
+│   │       └── ytest.csv                            # Test targets
 │   │
-│   └── quantitative_models/                          # Quantitative graph construction
-│       ├── model.pkl                                # Trained quantitative regression model (52 nodes)
-│       └── data.csv                                 # Modeling data for quantitative graph construction
+│   ├── demo_data_pipeline/                          # Demo for data preprocessing
+│   │   ├── edkgdl_data_pipeline.ipynb               # Jupyter notebook for data cleaning
+│   │   └── event_7-abortion_finger.csv              # Example raw event data
+│   │
+│   ├── demo_element_classifier/                     # Demo for element-specific classification
+│   │   ├── edkgdl_element_classifier.ipynb          # Jupyter notebook for classification modeling
+│   │   ├── Xtrain.csv
+│   │   ├── Ytrain.csv
+│   │   ├── Xtest.csv
+│   │   └── Ytest.csv
+│   │
+│   └── demo_element_regressor/                      # Demo for element-specific regression
+│       ├── edkgdl_element_regressor.ipynb           # Jupyter notebook for regression modeling
+│       ├── xtrain.csv
+│       ├── ytrain.csv
+│       ├── xtest.csv
+│       └── ytest.csv
 │
 └── Qualitative EDKG-guided classification           # EDKG-based qualitative EDC prediction with GCN
     ├── train.ipynb                                  # Notebook to train the GCN on EDKG for EDC prediction
