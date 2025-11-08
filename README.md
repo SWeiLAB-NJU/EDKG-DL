@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/version-1.0.0-blue)
 
-# EDKG-DL: An Interpretabile Endocrine Disruption Knowledge Graph-Augmented Deep Learning Model for Rapid and Accurate Prediction of Endocrine Disrupting Chemicals
+# EDKG-DL: An Interpretabile Endocrine Disruption Knowledge Graph-Augmented Deep Learning Model for Rapid and Accurate Prediction of Endocrine-Disrupting Chemicals
 
 This repository is the official implementation of **EDKG-DL**, proposed in our unpublished manuscript:  
 [**Causality-Integrated Chemical Knowledge Graph Enables High-Throughput Prediction of Multi-Endpoint Endocrine-Disrupting Chemicals**].  
