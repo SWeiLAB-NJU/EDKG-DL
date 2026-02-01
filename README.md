@@ -3,7 +3,7 @@
 # EDKG-DL: An Interpretabile Endocrine Disruption Knowledge Graph-Augmented Deep Learning Model for Rapid and Accurate Prediction of Endocrine-Disrupting Chemicals
 
 This repository is the official implementation of **EDKG-DL**, proposed in our unpublished manuscript:  
-[**Causality-Integrated Chemical Knowledge Graph Enables High-Throughput Prediction of Multi-Endpoint Endocrine-Disrupting Chemicals**].  
+[**Causality-Integrated Graph Learning for Multi-Endpoint Toxicity Prediction**].  
 The paper has been submitted and is currently under peer review.
 
 🔑 **Keywords**: endocrine disruption, knowledge graph, deep learning, causality, toxicity prediction
