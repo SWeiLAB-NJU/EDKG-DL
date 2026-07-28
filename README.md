@@ -16,6 +16,10 @@ This repository provides the **core code and modeling data** used in our unpubli
   <img src="images/EDKG-DL.png" alt="EDKG-DL platform" width="1000"/>
 </div>
 
+# 🎥 EDKG-DL Video Demonstration
+https://github.com/user-attachments/assets/3000b196-a187-4507-bcde-b2eeed067cc7
+
+
 ## 🧭 Note on Prediction Modes
 The current EDKG-DL web platform processes one compound at a time, primarily to enable interactive visualization and mechanistic interpretation of its compound-specific virtual perturbation map. A high-throughput batch prediction tool is currently under development, and its API will be made publicly available in a future release. Because batch prediction is designed for large-scale chemical screening, it will return structured prediction results without visualizing the virtual perturbation map for each individual compound. Users should therefore select the appropriate prediction mode according to whether their primary need is detailed mechanistic visualization or high-throughput screening.
 
