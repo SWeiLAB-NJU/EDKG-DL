@@ -56,55 +56,78 @@ xgboost         3.0.2
 This project mainly contains the following parts.
 
 ```
-├── Graph-informed data preparation                  # Data and demos for element-specific classification & regression
-│   ├── qualitative_data_for_modeling/               # Datasets for training element-specific classifiers
-│   │   └── event_X/                                 # Each folder = one biological event
+├── Graph-informed data preparation/
+│   │                                                # Data and demos for biological entity-specific classification and regression
+│   │
+│   ├── qualitative_data_for_modeling/               # Data for entity-specific classifiers (active/inactive)
+│   │   └── event_X/                                 # One folder per biological entity
 │   │       ├── Xtrain.csv                           # Training features
 │   │       ├── Ytrain.csv                           # Training labels
 │   │       ├── Xtest.csv                            # Test features
 │   │       └── Ytest.csv                            # Test labels
 │   │
-│   ├── quantitative_data_for_modeling/              # Datasets for training element-specific regressors
-│   │   └── event_Y/                                 # Each folder = one biological event
+│   ├── quantitative_data_for_modeling/              # Data for entity-specific regressors (NOAEL values)
+│   │   └── event_Y/                                 # One folder per biological entity
 │   │       ├── xtrain.csv                           # Training features
 │   │       ├── ytrain.csv                           # Training targets
 │   │       ├── xtest.csv                            # Test features
 │   │       └── ytest.csv                            # Test targets
 │   │
-│   ├── demo_data_pipeline/                          # Demo for data preprocessing
-│   │   ├── edkgdl_data_pipeline.ipynb               # Jupyter notebook for data cleaning
-│   │   └── event_7-abortion_finger.csv              # Example raw event data
+│   ├── demo_data_cleaning_pipeline/                 # Example data-preprocessing workflow
+│   │   ├── edkgdl_data_pipeline.py                  # Data-cleaning and preprocessing code
+│   │   └── event_7-abortion_finger.csv              # Example raw biological entity dataset
 │   │
-│   ├── demo_element_classifier/                     # Demo for element-specific classification
-│   │   ├── edkgdl_element_classifier.ipynb          # Jupyter notebook for classification modeling
-│   │   ├── Xtrain.csv
-│   │   ├── Ytrain.csv
-│   │   ├── Xtest.csv
-│   │   └── Ytest.csv
+│   ├── demo_biological_entity_classifier/           # Example entity-specific classification workflow
+│   │   ├── edkgdl_biological_entity_classifier.py   # Classification model training code
+│   │   ├── Xtrain.csv                               # Example training features
+│   │   ├── Ytrain.csv                               # Example training labels
+│   │   ├── Xtest.csv                                # Example test features
+│   │   └── Ytest.csv                                # Example test labels
 │   │
-│   └── demo_element_regressor/                      # Demo for element-specific regression
-│       ├── edkgdl_element_regressor.ipynb           # Jupyter notebook for regression modeling
-│       ├── xtrain.csv
-│       ├── ytrain.csv
-│       ├── xtest.csv
-│       └── ytest.csv
+│   └── demo_biological_entity_regressor/            # Example entity-specific regression workflow
+│       ├── edkgdl_biological_entity_regressor.py    # Regression model training code
+│       ├── xtrain.csv                               # Example training features
+│       ├── ytrain.csv                               # Example training targets
+│       ├── xtest.csv                                # Example test features
+│       └── ytest.csv                                # Example test targets
 │
-└── Qualitative EDKG-guided classification           # EDKG-based qualitative EDC prediction with GCN
-    ├── train.ipynb                                  # Notebook to train the GCN on EDKG for EDC prediction
-    ├── predict.ipynb                                # Notebook to run inference for EDC determination with the trained model
-    ├── model_state.pt                               # Saved model weights for the trained predictor
-    └── edkgdl_all_data/                             # All datasets used for model training, validation, and testing
-        ├── 0/                                       # Compound 0
-        │   ├── Graph_index.txt                      # Node list with activation labels
-        │   └── Graph_edge_index_direct.txt          # Directed edges with attributes and confidence
-        ├── 1/                                       # Compound 1
-        │   ├── Graph_index.txt
-        │   └── Graph_edge_index_direct.txt
-        ├── 2/
-        │   ├── Graph_index.txt
-        │   └── Graph_edge_index_direct.txt
-        └── ...                                      # One folder per compound (0, 1, 2, ...)
+├── Qualitative EDKG-guided classification/
+│   │                                                # Causality-integrated graph learning for qualitative EDC prediction
+│   │
+│   ├── edkgdl_train_with_external_validation.py     # Model optimization, training, and validation
+│   │
+│   ├── validation_1_repeated_group_nested_cv_analysis.py
+│   │                                                # Repeated group-nested cross-validation
+│   │
+│   ├── validation_2_negative_sample_ratio_sensitivity_analysis.py
+│   │                                                # Negative-sample ratio sensitivity analysis
+│   │
+│   ├── validation_3_leave_one_edc_decoy_group_analysis.py
+│   │                                                # Leave-one-EDC-decoy-group-out validation
+│   │
+│   ├── EDKGDL_results/                              # Final model and performance results
+│   │   ├── edkg_dl_model.pt                         # Final trained EDKG-DL model
+│   │   ├── internal_test_set_performance_metrics.csv
+│   │   │                                            # Internal test-set performance
+│   │   └── independent_external_validation_performance_metrics.csv
+│   │                                                # External validation results for 12 compounds
+│   │
+│   └── edkgdl_all_data/                             # Graph data for training, validation, and testing
+│       ├── 0/                                       # Compound 0
+│       │   ├── Graph_index.txt                      # Nodes and biological entity activation labels
+│       │   └── Graph_edge_index_direct.txt          # Directed edges, attributes, and confidence
+│       ├── 1/                                       # Compound 1
+│       │   ├── Graph_index.txt
+│       │   └── Graph_edge_index_direct.txt
+│       ├── 2/                                       # Compound 2
+│       │   ├── Graph_index.txt
+│       │   └── Graph_edge_index_direct.txt
+│       └── ...                                      # One folder per compound
+│
+└── Quantitative EDKG-guided regression/
+    └── README.txt                                   # AO prioritization and mechanistic backtracking
 ```
+
 
 ### 📑 Data schema (per compound folder)
 
