@@ -1,27 +1,30 @@
-![](https://img.shields.io/badge/version-1.0.0-blue)
+![](https://img.shields.io/badge/version-1.1.0-blue)
 
-# EDKG-DL: An Interpretabile Endocrine Disruption Knowledge Graph-Augmented Deep Learning Model for Rapid and Accurate Prediction of Endocrine-Disrupting Chemicals
+# EDKG-DL: EDKG-DL: Causality-Integrated Graph Learning for Multi-Endpoint Toxicity Prediction
 
 This repository is the official implementation of **EDKG-DL**, proposed in our unpublished manuscript:  
 [**Causality-Integrated Graph Learning for Multi-Endpoint Toxicity Prediction**].  
 The paper has been submitted and is currently under peer review.
 
-🔑 **Keywords**: endocrine disruption, knowledge graph, deep learning, causality, toxicity prediction
+🔑 **Keywords**: endocrine-disrupting chemicals; multi-endpoint toxicity prediction; causal knowledge graph; graph learning; adverse outcome pathways
 
 # 💖 Brief introduction
 We propose an **D**eep **L**earning framework with causality-integrated **E**ndocrine **D**isruption **K**nowledge **G**raph (**EDKG-DL**), designed to enable efficient, interpretable, and sustainable screening of endocrine-disrupting chemicals (EDCs).  
-This repository provides the **core code and modeling data** used in our unpublished manuscript (currently under peer review). For the **complete model**, including the endocrine disruption knowledge graph, toxicology datasets, and interactive prediction platform, please visit 👉 [https://www.edkgdl.com/#/](https://www.edkgdl.com/).
+This repository provides the **core code and modeling data** used in our unpublished manuscript (currently under peer review). For the **complete model**, including the endocrine disruption knowledge graph, toxicology datasets, and interactive prediction platform, please visit 👉 [https://www.edkgdl.com/](https://www.edkgdl.com/).
 
 <div align="center">
   <img src="images/EDKG-DL.png" alt="EDKG-DL platform" width="1000"/>
 </div>
 
-## 🤖 Model
+## 🧭 Note on Prediction Modes
+The current EDKG-DL web platform processes one compound at a time, primarily to enable interactive visualization and mechanistic interpretation of its compound-specific virtual perturbation map. A high-throughput batch prediction tool is currently under development, and its API will be made publicly available in a future release. Because batch prediction is designed for large-scale chemical screening, it will return structured prediction results without visualizing the virtual perturbation map for each individual compound. Users should therefore select the appropriate prediction mode according to whether their primary need is detailed mechanistic visualization or high-throughput screening.
+
+# 🤖 Model
 
 1. **Graph-informed data preparation**  
-   Assay outcomes from 26 in vitro and in vivo tests are mapped onto EDKG biological elements, generating two toxicity-informed graph representations:  
-   - a **qualitative graph** (74 elements with binary annotations), and  
-   - a **quantitative graph** (52 elements with potency values, including (Q)SAR-based predictions).  
+   Assay outcomes from 26 in vitro and in vivo tests are mapped onto EDKG biological entities, generating two toxicity-informed graph representations:  
+   - a **qualitative graph** (74 entities with binary annotations), and  
+   - a **quantitative graph** (52 entities with potency values, including (Q)SAR-based predictions).  
 
 2. **Qualitative EDKG-guided classification**  
    The qualitative graph is embedded into a three-layer edge-based **graph convolutional network (GCN)**. This module captures mechanistic interactions to predict whether a compound exhibits overall endocrine-disrupting potential, outputting a binary EDC/non-EDC label.  
@@ -36,7 +39,7 @@ This repository provides the **core code and modeling data** used in our unpubli
 
 # 🔬 Requirements
 
-All experiments were run in **Jupyter Notebook** environment.
+All experiments were run in **Python** environment.
 
 To run our code, please install dependency packages.
 ```
