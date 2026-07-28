@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/version-1.1.0-blue)
 
-# EDKG-DL: EDKG-DL: Causality-Integrated Graph Learning for Multi-Endpoint Toxicity Prediction
+# EDKG-DL: Causality-Integrated Graph Learning for Multi-Endpoint Toxicity Prediction
 
 This repository is the official implementation of **EDKG-DL**, proposed in our unpublished manuscript:  
 [**Causality-Integrated Graph Learning for Multi-Endpoint Toxicity Prediction**].  
