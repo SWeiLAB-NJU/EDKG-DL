@@ -1,0 +1,32 @@
+{
+  "graph_data_dir": "E:\\THY\\EDC-AOP\\test\\EDKG-DL\\EDKG-DL\\Qualitative_EDKG_guided_classification\\edkgdl_all_data",
+  "label_file": "E:\\THY\\EDC-AOP\\test\\EDKG-DL\\EDKG-DL\\Qualitative_EDKG_guided_classification\\edkgdl_all_data\\Graph_label.txt",
+  "group_mapping_csv": null,
+  "total_graphs_loaded": 903,
+  "internal_validation_cohort": {
+    "edc_graph_ids": "0-80",
+    "non_edc_graph_ids": "87-896",
+    "n_graphs": 891,
+    "n_edcs": 81,
+    "n_non_edcs": 810
+  },
+  "external_cohort_excluded_from_nested_cv": {
+    "edc_graph_ids": "81-86",
+    "non_edc_graph_ids": "897-902",
+    "n_graphs": 12,
+    "n_edcs": 6,
+    "n_non_edcs": 6
+  },
+  "decoys_per_edc": 10,
+  "n_repeats": 20,
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "hyperparam_trials": 6,
+  "max_epochs": 150,
+  "min_epochs": 25,
+  "early_stopping_patience": 25,
+  "class_weighted_loss": true,
+  "base_seed": 20260623,
+  "device": "cuda",
+  "grouping_assumption": "Each group contains one EDC and its 10 paired decoys. Default uses block ordering after graph ID 80."
+}

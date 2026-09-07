@@ -1,0 +1,30 @@
+{
+  "selected_trial_id": 91,
+  "selected_hyperparameters": {
+    "hidden_size1": 40,
+    "hidden_size2": 50,
+    "hidden_size3": 100,
+    "lr": 0.0007162378850072,
+    "weight_decay": 0.0005040261196391,
+    "batch_size": 50,
+    "dropout": 0.5
+  },
+  "selection_basis": "Highest pooled internal 10-fold out-of-fold positive-class F1-score; ties resolved by PR-AUC, balanced accuracy, then ROC-AUC.",
+  "inner_oof_metrics": {
+    "pr_auc": 0.8385474385587907,
+    "roc_auc": 0.9809112426035502,
+    "precision": 0.8666666666666667,
+    "recall": 0.8,
+    "specificity": 0.9876923076923076,
+    "balanced_accuracy": 0.8938461538461538,
+    "mcc": 0.8167209308450513,
+    "f1_score": 0.832,
+    "accuracy": 0.9706293706293706,
+    "threshold": 0.5,
+    "tp": 52,
+    "tn": 642,
+    "fp": 8,
+    "fn": 13
+  },
+  "external_data_used_for_selection": false
+}

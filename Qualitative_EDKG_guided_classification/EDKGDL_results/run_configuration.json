@@ -1,0 +1,36 @@
+{
+  "graph_data_dir": "E:\\THY\\EDC-AOP\\test\\EDKG-DL\\EDKG-DL\\Qualitative_EDKG_guided_classification\\edkgdl_all_data",
+  "label_file": "E:\\THY\\EDC-AOP\\test\\EDKG-DL\\EDKG-DL\\Qualitative_EDKG_guided_classification\\edkgdl_all_data\\Graph_label.txt",
+  "device": "cuda",
+  "n_total_graphs_loaded": 903,
+  "internal_cohort": {
+    "edcs": "graph IDs 0–80",
+    "non_edcs": "graph IDs 87–896",
+    "n_total": 891
+  },
+  "external_cohort": {
+    "edcs": "graph IDs 81–86",
+    "non_edcs": "graph IDs 897–902",
+    "n_total": 12
+  },
+  "outer_train_groups": 65,
+  "outer_test_groups": 16,
+  "outer_train_graphs": 715,
+  "outer_test_graphs": 176,
+  "outer_split_seed": 12345,
+  "inner_folds": 10,
+  "inner_split_seed": 23456,
+  "hyperparameter_trials": 100,
+  "hyperparameter_seed": 34567,
+  "max_epochs": 200,
+  "classification_threshold": 0.5,
+  "use_class_weighted_loss": false,
+  "model_selection_priority": [
+    "inner_oof_f1_score",
+    "inner_oof_pr_auc",
+    "inner_oof_balanced_accuracy",
+    "inner_oof_roc_auc"
+  ],
+  "internal_grouping_rule": "Each internal EDC graph ID 0–80 and its 10 paired internal DUD-E decoys from graph IDs 87–896 were assigned to one parent group.",
+  "external_validation_rule": "The external graphs (81–86 and 897–902) were excluded from all internal split, hyperparameter-selection, and training steps. After internal model selection, the selected configuration was refit using all 891 internal compounds and evaluated once on the 12 external compounds."
+}

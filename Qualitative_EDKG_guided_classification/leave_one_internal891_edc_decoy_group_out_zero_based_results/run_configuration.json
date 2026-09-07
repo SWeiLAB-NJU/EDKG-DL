@@ -1,0 +1,38 @@
+{
+  "graph_data_dir": "E:\\THY\\EDC-AOP\\test\\EDKG-DL\\EDKG-DL\\Qualitative_EDKG_guided_classification\\edkgdl_all_data",
+  "label_file": "E:\\THY\\EDC-AOP\\test\\EDKG-DL\\EDKG-DL\\Qualitative_EDKG_guided_classification\\edkgdl_all_data\\Graph_label.txt",
+  "device": "cuda",
+  "total_graphs_loaded": 903,
+  "internal_logo_cohort": {
+    "edc_graph_ids": "0-80",
+    "non_edc_graph_ids": "87-896",
+    "n_graphs": 891,
+    "n_edcs": 81,
+    "n_non_edcs": 810
+  },
+  "external_cohort_excluded_from_logo": {
+    "edc_graph_ids": "81-86",
+    "non_edc_graph_ids": "897-902",
+    "n_graphs": 12,
+    "n_edcs": 6,
+    "n_non_edcs": 6
+  },
+  "n_parent_groups": 81,
+  "heldout_group_size": 11,
+  "training_group_size": 880,
+  "max_epochs": 200,
+  "classification_threshold": 0.5,
+  "fixed_hyperparameters": {
+    "hidden_size1": 60,
+    "hidden_size2": 40,
+    "hidden_size3": 20,
+    "lr": 0.0005,
+    "weight_decay": 0.0005,
+    "batch_size": 64,
+    "dropout": 0.5
+  },
+  "hyperparameter_source": "Used manual fallback hyperparameters.",
+  "use_class_weighted_loss": false,
+  "grouping_rule": "Each held-out group contained one EDC and its 10 paired decoys; the complete group was excluded from classifier training.",
+  "scope_note": "This is classifier-level leave-one-parent-group-out validation. It does not retrain upstream entity-specific QSAR models for each held-out group."
+}

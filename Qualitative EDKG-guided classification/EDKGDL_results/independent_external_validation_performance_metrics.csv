@@ -1,2 +1,0 @@
-n_external_graphs,n_external_edcs,n_external_non_edcs,selected_trial_id,hidden_size1,hidden_size2,hidden_size3,lr,weight_decay,batch_size,dropout,pr_auc,roc_auc,precision,recall,specificity,balanced_accuracy,mcc,f1_score,accuracy,threshold,tp,tn,fp,fn
-12,6,6,91,40,50,100,0.0007162378850072,0.0005040261196391,50,0.5,1.0,1.0,1.0,0.8333333333333334,1.0,0.9166666666666667,0.8451542547285166,0.9090909090909091,0.9166666666666666,0.5,5,6,0,1

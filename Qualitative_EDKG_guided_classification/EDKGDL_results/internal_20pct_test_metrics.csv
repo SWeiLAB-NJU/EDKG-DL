@@ -1,0 +1,2 @@
+n_internal_test_graphs,n_internal_test_edcs,n_internal_test_non_edcs,selected_trial_id,hidden_size1,hidden_size2,hidden_size3,lr,weight_decay,batch_size,dropout,pr_auc,roc_auc,precision,recall,specificity,balanced_accuracy,mcc,f1_score,accuracy,threshold,tp,tn,fp,fn
+176,16,160,91,40,50,100,0.0007162378850072,0.0005040261196391,50,0.5,0.8791333156222862,0.99296875,0.9230769230769231,0.75,0.99375,0.871875,0.8174881820528846,0.8275862068965517,0.9715909090909091,0.5,12,159,1,4
