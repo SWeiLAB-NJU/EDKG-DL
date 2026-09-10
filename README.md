@@ -237,3 +237,13 @@ The conversion was performed using **PaDEL-Descriptor**, which can be downloaded
 
 # About
 Should you have any questions, please feel free to contact **Dr. Haoyue Tan**   at njutanhaoyue@nju.edu.cn.
+
+# Links
+
+- PyPI: [edkg-dl](https://pypi.org/project/edkg-dl/)                                        # Direct installation and use of the EDKG-DL software package.
+- GitHub: [haoyuejudy/EDKG-DL](https://github.com/SWeiLAB-NJU/EDKG-DL)                      # Code and data for reproducing the analyses and results reported in the EDKG-DL study.
+- GitHub: [haoyuejudy/EDKG-DL-Software](https://github.com/haoyuejudy/EDKG-DL-Software)     # Ready-to-use EDKG-DL software, including source code and usage instructions.
+- HuggingFace: [HaoyueTan/edkg-dl-models](https://huggingface.co/HaoyueTan/edkg-dl-models)  # Pretrained EDKG-DL models for direct prediction and software use.
+- Website: [EDKG-DL Web Platform](https://edkgdl.com/)                                      # Web-based platform for direct access to EDKG-DL prediction and analysis functions.
+
+
