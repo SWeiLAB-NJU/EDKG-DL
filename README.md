@@ -20,9 +20,6 @@ This repository provides the **core code and modeling data required to reproduce
 https://github.com/user-attachments/assets/3000b196-a187-4507-bcde-b2eeed067cc7
 
 
-## 🧭 Note on Prediction Modes
-The current EDKG-DL web platform processes one compound at a time, primarily to enable interactive visualization and mechanistic interpretation of its compound-specific virtual perturbation map. A high-throughput batch prediction tool is currently under development, and its API will be made publicly available in a future release. Because batch prediction is designed for large-scale chemical screening, it will return structured prediction results without visualizing the virtual perturbation map for each individual compound. Users should therefore select the appropriate prediction mode according to whether their primary need is detailed mechanistic visualization or high-throughput screening.
-
 # 🤖 Model
 
 1. **Graph-informed data preparation**  
@@ -238,8 +235,10 @@ The conversion was performed using **PaDEL-Descriptor**, which can be downloaded
 # About
 Should you have any questions, please feel free to contact **Dr. Haoyue Tan**   at njutanhaoyue@nju.edu.cn.
 
-# Links
+## 🧭 EDKG-DL platform and API description
+The EDKG-DL web platform is designed primarily for interactive, compound-specific analysis. In addition to providing prediction results, it enables users to visualize the compound-specific virtual perturbation map, trace causal chains across the endocrine disruption knowledge graph (EDKG), and interrogate the predicted mechanistic relationships underlying individual toxicity outcomes. For large-scale chemical screening, EDKG-DL also provides a high-throughput API that rapidly returns structured prediction results for multiple compounds. Unlike the web platform, however, the API does not generate compound-specific knowledge graph visualizations and therefore is not intended for detailed mechanistic analysis. Users should select the appropriate mode according to whether their primary need is mechanistic interpretation through knowledge graph visualization or efficient high-throughput prediction. All access links, including the web platform, software resources, and API, are provided in the Links section below.
 
+# Links
 - PyPI: [edkg-dl](https://pypi.org/project/edkg-dl/)                                        # Direct installation and use of the EDKG-DL software package.
 - GitHub: [haoyuejudy/EDKG-DL](https://github.com/SWeiLAB-NJU/EDKG-DL)                      # Code and data for reproducing the analyses and results reported in the EDKG-DL study.
 - GitHub: [haoyuejudy/EDKG-DL-Software](https://github.com/haoyuejudy/EDKG-DL-Software)     # Ready-to-use EDKG-DL software, including source code and usage instructions.
