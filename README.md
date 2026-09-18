@@ -9,7 +9,7 @@ This repository is the official implementation of **EDKG-DL**, described in our 
 # 💖 Brief introduction
 We propose an **D**eep **L**earning framework with causality-integrated **E**ndocrine **D**isruption **K**nowledge **G**raph (**EDKG-DL**), designed to enable efficient, interpretable, and sustainable screening of endocrine-disrupting chemicals (EDCs).
 
-This repository provides the **core code and modeling data required to reproduce the main analyses of EDKG-DL**. Due to the large scale of the complete EDKG-DL framework and its associated datasets, the full knowledge graph, toxicological data resources, and integrated prediction system are not hosted directly on GitHub. These resources, together with the interactive prediction platform, are available through the EDKG-DL website 👉 https://www.edkgdl.com/.
+This repository provides the **core code and modeling data required to reproduce the main analyses of EDKG-DL**. Due to the large scale of the complete EDKG-DL framework and its associated datasets, the full knowledge graph, toxicological data resources, and integrated prediction system are not hosted directly on GitHub. These resources, together with the interactive prediction platform, are available through the EDKG-DL website 👉 [https://www.edkgdl.com/](https://edkgdl.com/).
 
 
 <div align="center">
