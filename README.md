@@ -165,22 +165,6 @@ This project mainly contains the following parts.
 │   │   ├── independent_external_12_metrics.csv      # Performance on the independent external validation set of 12 compounds
 │   │   └── ...                                      # Additional generated files, including predictions, trained models, training histories, hyperparameter-search results, dataset-role assignments, and run configurations
 │
-│   ├── EDKG_repeated_group_nested_cv_results/       # Outputs from repeated group-preserving nested cross-validation
-│   │   ├── outer_fold_metrics.csv                   # Performance metrics from all repeated outer-fold evaluations
-│   │   ├── metric_summary_bootstrap_ci.csv          # Summary statistics and bootstrap 95% confidence intervals
-│   │   └── ...                                      # Additional generated files, including inner-CV results, selected hyperparameters, group mappings, and run configurations
-│
-│   ├── negative_ratio_sensitivity_internal891_zero_based_results/
-│   │   # Outputs from EDC:non-EDC ratio sensitivity analysis
-│   │   ├── outer_fold_metrics.csv                   # Outer-fold performance across different EDC:non-EDC ratios and sampling rounds
-│   │   ├── ratio_metric_summary.csv                 # Overall performance summary for each EDC:non-EDC ratio
-│   │   └── ...                                      # Additional generated files, including decoy-selection audits, coverage audits, group mappings, and run configurations
-│
-│   └── leave_one_internal891_edc_decoy_group_out_zero_based_results/
-│       # Outputs from leave-one-EDC-decoy-group-out validation
-│       ├── group_bootstrap_metric_ci.csv             # Group-level bootstrap 95% confidence intervals for LOGO validation
-│       ├── pooled_oof_metrics.csv                    # Pooled performance metrics across all 891 out-of-fold predictions
-│       └── ...                                      # Additional generated files, including training histories, bootstrap samples, group mappings, and run configurations
 │
 └── Quantitative_EDKG_guided_regression/
     └── README.txt                                   # AO prioritization and mechanistic backtracking
