@@ -110,7 +110,7 @@ NUM_WORKERS = 0
 
 USE_CLASS_WEIGHTED_LOSS = True
 
-BASE_SEED = 20260623
+BASE_SEED = 20260824
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 HYPERPARAM_SPACE = {
