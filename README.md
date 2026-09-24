@@ -227,15 +227,7 @@ Four columns (whitespace or tab-delimited):
 ```
 
 ## 🧭 EDKG-DL platform and API description
-The EDKG-DL web platform is designed primarily for interactive, compound-specific analysis. In addition to providing prediction results, it enables users to visualize the compound-specific virtual perturbation map, trace causal chains across the endocrine disruption knowledge graph (EDKG), and interrogate the predicted mechanistic relationships underlying individual toxicity outcomes. For large-scale chemical screening, EDKG-DL also provides a high-throughput API that rapidly returns structured prediction results for multiple compounds. Unlike the web platform, however, the API does not generate compound-specific knowledge graph visualizations and therefore is not intended for detailed mechanistic analysis. Users should select the appropriate mode according to whether their primary need is mechanistic interpretation through knowledge graph visualization or efficient high-throughput prediction. All access links, including the web platform, software resources, and API, are provided in the Links section below.
-
-
-# 📝 Links
-- PyPI: [edkg-dl](https://pypi.org/project/edkg-dl/)                                        # Direct installation and use of the EDKG-DL software package.
-- GitHub: [haoyuejudy/EDKG-DL](https://github.com/SWeiLAB-NJU/EDKG-DL)                      # Code and data for reproducing the analyses and results reported in the EDKG-DL study.
-- GitHub: [haoyuejudy/EDKG-DL-Software](https://github.com/haoyuejudy/EDKG-DL-Software)     # Ready-to-use EDKG-DL software, including source code and usage instructions.
-- HuggingFace: [HaoyueTan/edkg-dl-models](https://huggingface.co/HaoyueTan/edkg-dl-models)  # Pretrained EDKG-DL models for direct prediction and software use.
-- Website: [EDKG-DL Web Platform](https://edkgdl.com/)                                      # Web-based platform for direct access to EDKG-DL prediction and analysis functions.
+The EDKG-DL web platform is currently publicly available and is designed primarily for compound-specific mechanistic interpretation and visualization. In addition to providing toxicity predictions, the platform enables users to visualize compound-specific virtual perturbation maps, trace causal chains across the endocrine disruption knowledge graph (EDKG), and interrogate the predicted mechanistic relationships underlying individual toxicity outcomes. To further support large-scale chemical screening, we will subsequently release a high-throughput API that enables rapid batch prediction for multiple compounds. The API is designed for computational efficiency and will be capable of screening at least 100 chemicals per minute, providing structured prediction results suitable for large-scale prioritization and screening. Thus, the web platform primarily supports detailed mechanistic analysis and knowledge graph visualization, whereas the forthcoming API will facilitate efficient high-throughput chemical screening. The currently available access links are provided in the Links section below.
 
 
 # Note
